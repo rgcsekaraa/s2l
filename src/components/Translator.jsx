@@ -76,7 +76,7 @@ const Translator = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-4xl p-8 bg-slate-200 rounded-xl shadow-lg mt-8">
+    <div className="container mx-auto max-w-4xl p-8 rounded-xl shadow-2xl mt-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-gray-100 p-6 rounded-lg shadow-inner">
           <h2 className="text-xl font-bold mb-4">Configure ⚙️</h2>
