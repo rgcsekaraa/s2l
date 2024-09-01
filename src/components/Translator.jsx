@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
+const apiKey = import.meta.env.VITE_PUBLIC_API_KEY;
+
 recognition.interimResults = true;
 recognition.continuous = true;
 
@@ -54,7 +56,7 @@ const Translator = () => {
   };
 
   const translateText = (text) => {
-    axios.post(`https://translation.googleapis.com/language/translate/v2?key=${import.meta.env.VITE_GOOGLE_TRANSLATE_API_KEY}`, {
+    axios.post(`https://translation.googleapis.com/language/translate/v2?key=${apiKey}`, {
       q: text,
       source: inputLanguage.split('-')[0],
       target: outputLanguage,
