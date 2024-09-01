@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
-const apiKey = import.meta.env.VITE_PUBLIC_API_KEY;
+const apiKey = "AIzaSyA-PrR7ajkJ6fWbbsALyjgwHvPHFo9LQC8";
 
 recognition.interimResults = true;
 recognition.continuous = true;
