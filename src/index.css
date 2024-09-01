@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-r from-yellow-500 via-blue-500 to-green-500 text-gray-800 font-sans;
+  @apply bg-gradient-to-r from-green-300 via-blue-500 to-violet-500 text-gray-800 font-sans;
 }
